@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   await ScreenUtil.ensureScreenSize();
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
           title: 'Anime App',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            textTheme: GoogleFonts.ralewayTextTheme(
+              Theme.of(context).textTheme,
+            ),
           ),
           home: const Scaffold(body: Center(child: Text('Hello, World!'))),
         );
