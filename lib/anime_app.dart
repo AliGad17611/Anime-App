@@ -18,6 +18,7 @@ class AnimeApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           title: 'Anime App',
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             textTheme: GoogleFonts.ralewayTextTheme(

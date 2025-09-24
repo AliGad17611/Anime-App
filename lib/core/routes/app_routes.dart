@@ -1,6 +1,6 @@
 import 'package:anime_app/core/routes/routes.dart';
 import 'package:anime_app/features/details/presentation/views/details_view.dart';
-import 'package:anime_app/features/presentation/views/home_view.dart';
+import 'package:anime_app/features/home/presentation/views/home_view.dart';
 import 'package:anime_app/features/subscriptions/presentation/views/subscription_view.dart';
 import 'package:flutter/material.dart';
 

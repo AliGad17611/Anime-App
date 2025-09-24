@@ -4,12 +4,18 @@ class AppColors {
   AppColors._();
 
   // Text colors
-  static const Color primaryText = Color(0xFF18153F); // Primary Text (Dark Blue)
-  static const Color secondaryText = Color(0xFFA9A9A9); // Secondary Text (Light Gray)
+  static const Color primaryText = Color(
+    0xFF18153F,
+  ); // Primary Text (Dark Blue)
+  static const Color secondaryText = Color(
+    0xFFA9A9A9,
+  ); // Secondary Text (Light Gray)
   static const Color grayText = Color(0xFFACACAC); // Gray Text
   static const Color lightGrayText = Color(0xFFCBC4C4); // Light Gray Text
   static const Color blackText = Color(0xFF000000); // Black Text
-  static const Color accentText = Color(0xFFA49AD8); // Accent Text (Light Purple)
+  static const Color accentText = Color(
+    0xFFA49AD8,
+  ); // Accent Text (Light Purple)
 
   // General colors
   static const Color white = Color(0xFFFFFFFF); // White
@@ -19,7 +25,10 @@ class AppColors {
 
   // Icon colors
   static const Color iconLightGray = Color(0xFFD6CCCC); // Light Gray Icon
-  static const Color iconAccentRed = Color(0xFFFF7A87); // Accent Icon (Pink/Red)
+  static const Color iconAccentRed = Color(
+    0xFFFF7A87,
+  ); // Accent Icon (Pink/Red)
+  static const Color starColor = Color(0xFFD3D6FF); // Yellow Icon
 
   // Border colors
   static const Color borderDark = Color(0XFF191919); // Dark Border
@@ -28,4 +37,10 @@ class AppColors {
   static const Color overlayGreen = Color(0x8D899866); // Green Overlay
   static const Color overlayBlue = Color(0x2C1E5173); // Blue Overlay
   static const Color overlayYellow = Color(0xD9D9D93D); // Yellow Overlay
+  static const Color homeBackgroundGradient2 = Color(
+    0xFFf9f8fd,
+  ); // Home Background Gradient Color 1
+  static const Color homeBackgroundGradient1 = Color(
+    0xFFdde2ff,
+  ); // Home Background Gradient Color 2
 }
