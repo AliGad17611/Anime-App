@@ -36,6 +36,13 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
   google_fonts: ^6.3.1
+  get_it: ^8.2.0
+  dartz: ^0.10.1
+  equatable: ^2.0.7
+  flutter_bloc: ^9.1.1
+  dio: ^5.9.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
