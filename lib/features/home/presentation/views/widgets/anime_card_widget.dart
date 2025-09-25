@@ -7,9 +7,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AnimeCardWidget extends StatelessWidget {
   final AnimeEntity anime;
-  final VoidCallback? onTap;
+  final VoidCallback onTap;
 
-  const AnimeCardWidget({super.key, required this.anime, this.onTap});
+  const AnimeCardWidget({super.key, required this.anime, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

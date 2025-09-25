@@ -1,4 +1,3 @@
-
 import 'package:anime_app/core/theme/app_assets.dart';
 
 class TopCharacterEntity {
@@ -12,6 +11,7 @@ class TopCharacterEntity {
     required this.animeName,
   });
 }
+
 List<TopCharacterEntity> topCharacters = [
   TopCharacterEntity(
     topCharacterName: "Gon Freecss",
@@ -27,5 +27,10 @@ List<TopCharacterEntity> topCharacters = [
     topCharacterName: "Luffy",
     topCharacterImage: AppAssets.luffy,
     animeName: "One Piece",
+  ),
+  TopCharacterEntity(
+    topCharacterName: "Gon Freecss",
+    topCharacterImage: AppAssets.gonFreecss,
+    animeName: "Hunter x Hunter",
   ),
 ];

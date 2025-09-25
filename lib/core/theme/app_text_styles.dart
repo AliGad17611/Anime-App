@@ -6,6 +6,13 @@ import 'app_colors.dart';
 class AppTextStyles {
   AppTextStyles._();
 
+  // 11 px
+  static TextStyle font11W500White = TextStyle(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
+  );
+
   // 12 px
   static TextStyle font12W400Gray = TextStyle(
     fontSize: 12.sp,
@@ -142,6 +149,13 @@ class AppTextStyles {
   static TextStyle font24W700Black = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w700,
+    color: AppColors.blackText,
+  );
+
+  // 36 px
+  static TextStyle font36W400BlackNewRocker = GoogleFonts.newRocker(
+    fontSize: 36.sp,
+    fontWeight: FontWeight.w400,
     color: AppColors.blackText,
   );
 

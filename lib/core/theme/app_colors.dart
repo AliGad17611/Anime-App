@@ -35,12 +35,17 @@ class AppColors {
 
   // Background overlay colors
   static const Color overlayGreen = Color(0x8D899866); // Green Overlay
-  static const Color overlayBlue = Color(0x2C1E5173); // Blue Overlay
-  static const Color overlayYellow = Color(0xD9D9D93D); // Yellow Overlay
+  static const Color overlayBlue = Color(0xFF2C1E51); // Blue Overlay
+  static const Color overlayYellow = Color(0x3DD9D9D9); // Yellow Overlay
   static const Color homeBackgroundGradient2 = Color(
     0xFFf9f8fd,
   ); // Home Background Gradient Color 1
   static const Color homeBackgroundGradient1 = Color(
     0xFFdde2ff,
   ); // Home Background Gradient Color 2
+  static const Color quarterBlack = Color(0x26000000); // Quarter Black
+  static const Color bottomBar = Color(0xFF16103C); // Bottom Bar
+  static const Color bottomBarPrimary = Color(0x668D8998); // Bottom Bar Primary
+  static const Color bottomBarPrimary2 = Color(0xFF6758FE); // Bottom Bar Primary
+  
 }

@@ -6,12 +6,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AnimeListWidget extends StatelessWidget {
   final List<AnimeEntity> animeList;
-  final Function(AnimeEntity)? onAnimeSelected;
+  final VoidCallback onAnimeSelected;
 
   const AnimeListWidget({
     super.key,
     required this.animeList,
-    this.onAnimeSelected,
+    required this.onAnimeSelected,
   });
 
   @override
@@ -21,10 +21,8 @@ class AnimeListWidget extends StatelessWidget {
       child: ListView.separated(
         padding: EdgeInsets.symmetric(horizontal: 16.w),
         scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => AnimeCardWidget(
-          anime: animeList[index],
-          onTap: () => onAnimeSelected?.call(animeList[index]),
-        ),
+        itemBuilder: (context, index) =>
+            AnimeCardWidget(anime: animeList[index], onTap: onAnimeSelected),
         separatorBuilder: (BuildContext context, int index) =>
             horizontalSpace(14),
         itemCount: animeList.length,

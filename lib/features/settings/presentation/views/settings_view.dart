@@ -4,8 +4,8 @@ import 'package:anime_app/core/theme/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class SubscriptionView extends StatelessWidget {
-  const SubscriptionView({super.key});
+class SettingsView extends StatelessWidget {
+  const SettingsView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class SubscriptionView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               verticalSpace(23),
-              Text('Subscriptions', style: AppTextStyles.font22W700PrimaryText),
+              Text('Settings', style: AppTextStyles.font22W700PrimaryText),
               verticalSpace(24),
               Expanded(
                 child: Center(
@@ -26,18 +26,18 @@ class SubscriptionView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        Icons.subscriptions_outlined,
+                        Icons.settings_outlined,
                         size: 80.r,
                         color: AppColors.primary,
                       ),
                       verticalSpace(16),
                       Text(
-                        'Subscriptions Screen',
+                        'Settings Screen',
                         style: AppTextStyles.font16W700PrimaryText,
                       ),
                       verticalSpace(8),
                       Text(
-                        'Manage your anime subscriptions and favorites',
+                        'Customize your app preferences and settings',
                         style: AppTextStyles.font14W500MediumGray,
                         textAlign: TextAlign.center,
                       ),

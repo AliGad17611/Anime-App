@@ -1,10 +1,14 @@
+import 'package:anime_app/core/routes/routes.dart';
 import 'package:anime_app/core/theme/app_assets.dart';
 import 'package:anime_app/core/theme/app_colors.dart';
 import 'package:anime_app/core/theme/app_text_styles.dart';
 import 'package:anime_app/core/theme/spacing.dart';
 import 'package:anime_app/features/home/domain/entity/anime_entity.dart';
 import 'package:anime_app/features/home/domain/entity/top_character_entity.dart';
-import 'package:anime_app/features/home/presentation/views/widgets/widgets.dart';
+import 'package:anime_app/features/home/presentation/views/widgets/home_background_widget.dart';
+import 'package:anime_app/features/home/presentation/views/widgets/filter_chips_widget.dart';
+import 'package:anime_app/features/home/presentation/views/widgets/anime_list_widget.dart';
+import 'package:anime_app/features/home/presentation/views/widgets/top_characters_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -67,7 +71,8 @@ class HomeView extends StatelessWidget {
               verticalSpace(20),
               AnimeListWidget(
                 animeList: anime,
-                onAnimeSelected: (anime) {
+                onAnimeSelected: () {
+                  Navigator.pushNamed(context, Routes.details);
                   // Handle anime selection
                 },
               ),
