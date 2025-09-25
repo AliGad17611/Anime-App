@@ -6,6 +6,13 @@ import 'app_colors.dart';
 class AppTextStyles {
   AppTextStyles._();
 
+  // 11 px
+  static TextStyle font11W500White = TextStyle(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
+  );
+
   // 12 px
   static TextStyle font12W400Gray = TextStyle(
     fontSize: 12.sp,
@@ -13,10 +20,16 @@ class AppTextStyles {
     color: AppColors.grayText,
   );
 
-  static TextStyle font12W400Secondary = TextStyle(
+  static TextStyle font12W500Secondary = TextStyle(
     fontSize: 12.sp,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
     color: AppColors.secondaryText,
+  );
+
+  static TextStyle font12W600Dark = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+    color: AppColors.darkBackground,
   );
 
   static TextStyle font12W700Accent = TextStyle(
@@ -49,6 +62,18 @@ class AppTextStyles {
     fontSize: 14.sp,
     fontWeight: FontWeight.w700,
     color: AppColors.primary,
+  );
+
+  static TextStyle font14W700Accent = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.accentText,
+  );
+
+  static TextStyle font14W700PrimaryText = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.primaryText,
   );
 
   static TextStyle font14W700White = TextStyle(
@@ -130,6 +155,13 @@ class AppTextStyles {
   static TextStyle font24W700Black = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w700,
+    color: AppColors.blackText,
+  );
+
+  // 36 px
+  static TextStyle font36W400BlackNewRocker = GoogleFonts.newRocker(
+    fontSize: 36.sp,
+    fontWeight: FontWeight.w400,
     color: AppColors.blackText,
   );
 
