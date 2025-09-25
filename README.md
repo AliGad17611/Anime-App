@@ -12,6 +12,14 @@ A modern Flutter application for anime enthusiasts, built with Clean Architectur
 - **⚙️ Settings**: Customize app preferences and configurations
 - **💳 Subscriptions**: Premium subscription plans and features
 
+## 🎥 Project Demo
+
+Check out the app in action! The demo video showcases all the key features and user interface:
+
+https://github.com/user-attachments/assets/projectDemo.mp4
+
+*The demo video demonstrates the complete user journey including home browsing, search functionality, anime details, genre exploration, and settings configuration.*
+
 ## 🏗️ Architecture Overview
 
 This application follows **Clean Architecture** principles with a clear separation of concerns across three main layers:
