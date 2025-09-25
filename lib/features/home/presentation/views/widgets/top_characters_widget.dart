@@ -1,5 +1,5 @@
 import 'package:anime_app/core/theme/app_text_styles.dart';
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
 import 'package:anime_app/features/home/domain/entity/top_character_entity.dart';
 import 'package:anime_app/features/home/presentation/views/widgets/character_item_widget.dart';
 import 'package:flutter/material.dart';

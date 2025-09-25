@@ -1,4 +1,5 @@
 import 'package:anime_app/core/theme/app_colors.dart';
+import 'package:anime_app/core/widgets/gradient_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -9,18 +10,7 @@ class HomeBackgroundWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            AppColors.homeBackgroundGradient1,
-            AppColors.homeBackgroundGradient2,
-          ],
-        ),
-      ),
-      child: Stack(
+    return GradientBackground(gradient1: AppColors.homeBackgroundGradient1, gradient2: AppColors.homeBackgroundGradient2, child: Stack(
         children: [
           Positioned(
             top: -(148.61.h),
@@ -32,7 +22,6 @@ class HomeBackgroundWidget extends StatelessWidget {
           ),
           child,
         ],
-      ),
-    );
+      ),);
   }
 }

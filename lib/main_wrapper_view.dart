@@ -1,13 +1,14 @@
 import 'package:anime_app/core/theme/app_colors.dart';
 import 'package:anime_app/core/theme/app_text_styles.dart';
+import 'package:anime_app/core/theme/app_assets.dart';
+import 'package:anime_app/core/widgets/custom_nav_bar.dart';
 import 'package:anime_app/features/home/presentation/views/home_view.dart';
 import 'package:anime_app/features/explore/presentation/views/explore_view.dart';
+import 'package:anime_app/features/language/presentation/views/language_view.dart';
 import 'package:anime_app/features/search/presentation/views/search_view.dart';
-import 'package:anime_app/features/subscriptions/presentation/views/subscription_view.dart';
 import 'package:anime_app/features/settings/presentation/views/settings_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 
 class MainWrapperView extends StatefulWidget {
   const MainWrapperView({super.key});
@@ -23,7 +24,7 @@ class _MainWrapperViewState extends State<MainWrapperView> {
     const HomeView(),
     const ExploreView(),
     const SearchView(),
-    const SubscriptionView(),
+    const LanguageView(),
     const SettingsView(),
   ];
 
@@ -33,47 +34,40 @@ class _MainWrapperViewState extends State<MainWrapperView> {
       backgroundColor: AppColors.white,
       body: _pages[_selectedIndex],
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          color: AppColors.white,
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 20,
-              color: Colors.black.withValues(alpha: 0.1),
-              offset: const Offset(0, -5),
-            ),
-          ],
-        ),
+        decoration: BoxDecoration(color: AppColors.bottomNavBar),
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: 12.w,
+            horizontal: 2.w,
             vertical: 8.h,
-          ), // Reduced horizontal padding
-          child: GNav(
+          ), // Ultra minimal horizontal padding for closest items
+          child: CustomNavBar(
             //ripple color appear when the button is pressed
             rippleColor: AppColors.primary.withValues(alpha: 0.1),
             //hover color appear when the button is hovered
             hoverColor: AppColors.primary.withValues(alpha: 0.1),
-            gap: 6.w, // Reduced gap to prevent overflow
+            gap: 4.w, // Gap between icon and text
             activeColor: AppColors.white,
-            iconSize: 22.r, // Slightly smaller icon size
+            iconSize: 20.r, // Icon size for horizontal layout
             padding: EdgeInsets.symmetric(
-              horizontal: 16.w,
-              vertical: 12.h,
-            ), // Reduced horizontal padding
+              horizontal: 12.w,
+              vertical: 10.h,
+            ), // Selected item padding (unselected will be 1/3 of horizontal)
             duration: const Duration(milliseconds: 400),
             tabBackgroundColor: AppColors.primary,
             color: AppColors.mediumGray,
             curve: Curves.easeOutExpo,
-            textStyle: AppTextStyles.font14W600White,
+            textStyle: AppTextStyles.font12W600Dark.copyWith(
+              color: AppColors.white,
+            ),
             mainAxisAlignment:
-                MainAxisAlignment.spaceBetween, // Better distribution
+                MainAxisAlignment.spaceAround, // Tighter distribution
 
             tabs: [
-              GButton(icon: Icons.home_outlined, text: 'Home'),
-              GButton(icon: Icons.library_books_outlined, text: 'Explore'),
-              GButton(icon: Icons.search_outlined, text: 'Search'),
-              GButton(icon: Icons.subscriptions_outlined, text: 'Subscrip'),
-              GButton(icon: Icons.settings_outlined, text: 'Settings'),
+              CustomNavBarItem(imagePath: AppAssets.home, text: 'Home'),
+              CustomNavBarItem(imagePath: AppAssets.library, text: 'Explore'),
+              CustomNavBarItem(imagePath: AppAssets.search, text: 'Search'),
+              CustomNavBarItem(imagePath: AppAssets.language, text: 'Language'),
+              CustomNavBarItem(imagePath: AppAssets.settings, text: 'Settings'),
             ],
             selectedIndex: _selectedIndex,
             onTabChange: (index) {

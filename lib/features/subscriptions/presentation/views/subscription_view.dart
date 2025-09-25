@@ -1,49 +1,51 @@
-import 'package:anime_app/core/theme/app_colors.dart';
-import 'package:anime_app/core/theme/app_text_styles.dart';
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
+import 'package:anime_app/features/subscriptions/presentation/views/widgets/subscription_background_widget.dart';
+import 'package:anime_app/features/subscriptions/presentation/views/widgets/subscription_continue_button_widget.dart';
+import 'package:anime_app/features/subscriptions/presentation/views/widgets/subscription_header_widget.dart';
+import 'package:anime_app/features/subscriptions/presentation/views/widgets/subscription_hero_section_widget.dart';
+import 'package:anime_app/features/subscriptions/presentation/views/widgets/subscription_plans_section_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class SubscriptionView extends StatelessWidget {
+class SubscriptionView extends StatefulWidget {
   const SubscriptionView({super.key});
+
+  @override
+  State<SubscriptionView> createState() => _SubscriptionViewState();
+}
+
+class _SubscriptionViewState extends State<SubscriptionView> {
+  int selectedPlanIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white,
-      body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(16.w),
+      body: SubscriptionBackgroundWidget(
+        child: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              verticalSpace(23),
-              Text('Subscriptions', style: AppTextStyles.font22W700PrimaryText),
+              verticalSpace(37),
+              const SubscriptionHeaderWidget(),
+              verticalSpace(10),
+              const SubscriptionHeroSectionWidget(),
               verticalSpace(24),
-              Expanded(
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.subscriptions_outlined,
-                        size: 80.r,
-                        color: AppColors.primary,
-                      ),
-                      verticalSpace(16),
-                      Text(
-                        'Subscriptions Screen',
-                        style: AppTextStyles.font16W700PrimaryText,
-                      ),
-                      verticalSpace(8),
-                      Text(
-                        'Manage your anime subscriptions and favorites',
-                        style: AppTextStyles.font14W500MediumGray,
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
+              Column(
+                children: [
+                  SubscriptionPlansSectionWidget(
+                    selectedPlanIndex: selectedPlanIndex,
+                    onPlanSelected: (index) {
+                      setState(() {
+                        selectedPlanIndex = index;
+                      });
+                    },
                   ),
-                ),
+                  verticalSpace(45),
+                  SubscriptionContinueButtonWidget(
+                    onPressed: () {
+                      // Handle continue button press
+                    },
+                  ),
+                ],
               ),
             ],
           ),

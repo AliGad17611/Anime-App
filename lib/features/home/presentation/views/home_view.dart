@@ -2,7 +2,7 @@ import 'package:anime_app/core/routes/routes.dart';
 import 'package:anime_app/core/theme/app_assets.dart';
 import 'package:anime_app/core/theme/app_colors.dart';
 import 'package:anime_app/core/theme/app_text_styles.dart';
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
 import 'package:anime_app/features/home/domain/entity/anime_entity.dart';
 import 'package:anime_app/features/home/domain/entity/top_character_entity.dart';
 import 'package:anime_app/features/home/presentation/views/widgets/home_background_widget.dart';

@@ -1,3 +1,4 @@
+import 'package:anime_app/core/routes/routes.dart';
 import 'package:anime_app/core/theme/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:anime_app/features/details/presentation/widgets/hero_image_widget.dart';
@@ -39,7 +40,7 @@ class DetailsView extends StatelessWidget {
               // Handle preview tap
             },
             onWatchNowTap: () {
-              // Handle watch now tap
+              Navigator.pushNamed(context, Routes.subscription);
             },
           ),
         ],

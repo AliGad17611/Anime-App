@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
 import 'package:anime_app/core/theme/app_text_styles.dart';
 
 /// A reusable widget that displays statistics with an icon, record value, and unit

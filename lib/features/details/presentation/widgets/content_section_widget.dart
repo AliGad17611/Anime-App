@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'dart:ui';
 import 'package:anime_app/core/theme/app_colors.dart';
 import 'package:anime_app/core/theme/app_text_styles.dart';
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
 import 'package:anime_app/core/theme/app_assets.dart';
 import 'type_container.dart';
 import 'statistics_row_widget.dart';

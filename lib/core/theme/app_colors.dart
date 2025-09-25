@@ -40,12 +40,19 @@ class AppColors {
   static const Color homeBackgroundGradient2 = Color(
     0xFFf9f8fd,
   ); // Home Background Gradient Color 1
-  static const Color homeBackgroundGradient1 = Color(
-    0xFFdde2ff,
-  ); // Home Background Gradient Color 2
+  static const Color homeBackgroundGradient1 = Color(0xFFdde2ff);
+  // Home Background Gradient Color 2
+  static const Color subscriptionBackgroundGradient1 = Color(
+    0xFFd3d6ff,
+  ); // Subscription Background Gradient Color 1
+  static const Color subscriptionBackgroundGradient2 = Color(
+    0xFFfdfdff,
+  ); // Subscription Background Gradient Color 2
   static const Color quarterBlack = Color(0x26000000); // Quarter Black
   static const Color bottomBar = Color(0xFF16103C); // Bottom Bar
   static const Color bottomBarPrimary = Color(0x668D8998); // Bottom Bar Primary
-  static const Color bottomBarPrimary2 = Color(0xFF6758FE); // Bottom Bar Primary
-  
+  static const Color bottomBarPrimary2 = Color(
+    0xFF6758FE,
+  ); // Bottom Bar Primary
+  static const Color bottomNavBar = Color(0xFFF9F8FD); // Bottom Bar Primary
 }

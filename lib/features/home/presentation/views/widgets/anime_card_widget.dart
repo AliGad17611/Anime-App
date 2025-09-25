@@ -1,6 +1,6 @@
 import 'package:anime_app/core/theme/app_colors.dart';
 import 'package:anime_app/core/theme/app_text_styles.dart';
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
 import 'package:anime_app/features/home/domain/entity/anime_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

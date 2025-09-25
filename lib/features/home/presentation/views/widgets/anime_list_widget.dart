@@ -1,4 +1,4 @@
-import 'package:anime_app/core/theme/spacing.dart';
+import 'package:anime_app/core/utils/spacing.dart';
 import 'package:anime_app/features/home/domain/entity/anime_entity.dart';
 import 'package:anime_app/features/home/presentation/views/widgets/anime_card_widget.dart';
 import 'package:flutter/material.dart';

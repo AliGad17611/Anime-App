@@ -64,6 +64,12 @@ class AppTextStyles {
     color: AppColors.primary,
   );
 
+  static TextStyle font14W700Accent = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.accentText,
+  );
+
   static TextStyle font14W700PrimaryText = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w700,
