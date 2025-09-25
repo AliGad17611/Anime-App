@@ -1,10 +1,10 @@
 import 'package:anime_app/core/routes/routes.dart';
 import 'package:anime_app/core/theme/app_assets.dart';
 import 'package:flutter/material.dart';
-import 'package:anime_app/features/details/presentation/widgets/hero_image_widget.dart';
-import 'package:anime_app/features/details/presentation/widgets/content_section_widget.dart';
-import 'package:anime_app/features/details/presentation/widgets/title_overlay_widget.dart';
-import 'package:anime_app/features/details/presentation/widgets/bottom_action_buttons.dart';
+import 'package:anime_app/features/details/presentation/views/widgets/hero_image_widget.dart';
+import 'package:anime_app/features/details/presentation/views/widgets/content_section_widget.dart';
+import 'package:anime_app/features/details/presentation/views/widgets/title_overlay_widget.dart';
+import 'package:anime_app/features/details/presentation/views/widgets/bottom_action_buttons.dart';
 
 class DetailsView extends StatelessWidget {
   const DetailsView({super.key});

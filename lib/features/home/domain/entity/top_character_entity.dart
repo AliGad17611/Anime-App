@@ -1,36 +1,42 @@
 import 'package:anime_app/core/theme/app_assets.dart';
+import 'package:equatable/equatable.dart';
 
-class TopCharacterEntity {
-  final String topCharacterName;
-  final String topCharacterImage;
+class TopCharacterEntity extends Equatable {
+  final String? id;
+  final String characterName;
+  final String characterImage;
   final String animeName;
 
-  TopCharacterEntity({
-    required this.topCharacterName,
-    required this.topCharacterImage,
+  const TopCharacterEntity({
+    this.id,
+    required this.characterName,
+    required this.characterImage,
     required this.animeName,
   });
+
+  @override
+  List<Object?> get props => [id, characterName, characterImage, animeName];
 }
 
 List<TopCharacterEntity> topCharacters = [
   TopCharacterEntity(
-    topCharacterName: "Gon Freecss",
-    topCharacterImage: AppAssets.gonFreecss,
+    characterName: "Gon Freecss",
+    characterImage: AppAssets.gonFreecss,
     animeName: "Hunter x Hunter",
   ),
   TopCharacterEntity(
-    topCharacterName: "Naruto Uzumaki",
-    topCharacterImage: AppAssets.narutoUzumaki,
+    characterName: "Naruto Uzumaki",
+    characterImage: AppAssets.narutoUzumaki,
     animeName: "Naruto",
   ),
   TopCharacterEntity(
-    topCharacterName: "Luffy",
-    topCharacterImage: AppAssets.luffy,
+    characterName: "Luffy",
+    characterImage: AppAssets.luffy,
     animeName: "One Piece",
   ),
   TopCharacterEntity(
-    topCharacterName: "Gon Freecss",
-    topCharacterImage: AppAssets.gonFreecss,
+    characterName: "Gon Freecss",
+    characterImage: AppAssets.gonFreecss,
     animeName: "Hunter x Hunter",
   ),
 ];

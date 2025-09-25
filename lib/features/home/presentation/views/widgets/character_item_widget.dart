@@ -19,11 +19,11 @@ class CharacterItemWidget extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 48.r,
-            backgroundImage: AssetImage(character.topCharacterImage),
+            backgroundImage: AssetImage(character.characterImage),
           ),
           verticalSpace(8),
           Text(
-            character.topCharacterName,
+            character.characterName,
             style: AppTextStyles.font16W600PrimaryText,
           ),
           Text(character.animeName, style: AppTextStyles.font14W600Gray),
