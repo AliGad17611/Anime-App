@@ -16,7 +16,10 @@ A modern Flutter application for anime enthusiasts, built with Clean Architectur
 
 Check out the app in action! The demo video showcases all the key features and user interface:
 
-https://github.com/user-attachments/assets/projectDemo.mp4
+<video width="100%" controls>
+  <source src="assets/projectDemo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 *The demo video demonstrates the complete user journey including home browsing, search functionality, anime details, genre exploration, and settings configuration.*
 
